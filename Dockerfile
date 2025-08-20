@@ -1,5 +1,5 @@
 # first stage
-FROM openjdk:23-jdk-oracle AS builder
+FROM openjdk:17-jdk-oracle AS builder
 
 WORKDIR /app
 
@@ -8,10 +8,12 @@ COPY mvnw.cmd .
 COPY .mvn .mvn
 COPY src src
 COPY pom.xml .
-RUN ./mvnw package -DskipTests=true
+
+#build the application
+RUN mvn package -Dskip.test.skip=true
 
 # second stage
-FROM openjdk:23-jdk-oracle
+FROM openjdk:17-jdk-oracle
 
 WORKDIR /runningapp
 

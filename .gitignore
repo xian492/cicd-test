@@ -1,0 +1,72 @@
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# 日志文件
+logs/
+*.log
+
+# 构建输出
+build/
+target/
+out/
+dist/
+
+# Maven
+.mvn/
+!/.mvn/wrapper/maven-wrapper.jar
+
+# Gradle
+.gradle/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+
+# 环境变量文件
+.env
+.env.*
+
+# IDEs 和编辑器
+.vscode/
+.idea/
+*.iml
+
+# Swap 文件
+*.swp
+*.swo
+
+# 本地配置
+*.local
+
+# 其他临时文件
+*.tmp
+*.bak
+*.orig
+*.rej
+
+# 覆盖率报告
+coverage/
+*.lcov
+
+# 依赖缓存
+.cache/
+.pnpm-store/
