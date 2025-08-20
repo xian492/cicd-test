@@ -10,7 +10,7 @@ COPY src src
 COPY pom.xml .
 
 #build the application
-RUN mvn package -Dskip.test.skip=true
+RUN chmod +x mvnw && ./mvnw package -DskipTests=true
 
 # second stage
 FROM openjdk:17-jdk-oracle
